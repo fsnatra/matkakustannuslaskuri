@@ -6,7 +6,7 @@ namespace matkakustannuslaskuri
     {
         private MileageCalculator mileage;
 
-        public UserInterface(MileageCalculator mileage) // Links UI to MileageCalculator class. ? Maybe not sure
+        public UserInterface(MileageCalculator mileage) // Links UI to MileageCalculator class. ? Maybe not really sure what this does yet lol
         {
             this.mileage = mileage;
         }
@@ -58,11 +58,9 @@ namespace matkakustannuslaskuri
                 // Add values to object
                 MileageCalculator mileage = new(distance, consuption, fuelPrice);
 
-                // Calculate the Fuel Used
-                mileage.FuelUsed();
+                // Calculate the rate
+                mileage.Calculator();
 
-                // Then calculate the total cost
-                mileage.TotalCost();
             }
 
             // Print summary after all the calculations have been done
