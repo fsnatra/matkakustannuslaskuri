@@ -21,12 +21,11 @@ namespace matkakustannuslaskuri
         public void FuelUsed()
         {
             this.fuelUsed = (this.distance / 100) * this.conspuption; // Fuel used based on distance and consuption per 100km.
-            TotalCost();
         }
 
         public void TotalCost()
         {
-            this.totalCosts.Add(this.fuelUsed * this.fuelPrice); // Total cost based on fuel used times the fuel price per litre.
+            this.totalCosts.Add(this.fuelUsed * this.fuelPrice); // Adds the total cost based on fuel used times the fuel price per litre.
         }
     }
 }
