@@ -24,11 +24,14 @@ Ohjelmassa on oltava vähintään:
 
 ### 3. Projectin laajuus
 
-Koodin pituus: noin 30–100 riviä.
+**Koodin pituus: noin 30–100 riviä.**  
+_hups... tuli 108 riviä (tarkistettu Tokei:lla)_
 
-Työaika: 5–8 tuntia.
+**Työaika: 5–8 tuntia.**  
+_Kyllä._
 
-Tavoite: toimiva, selkeä ja itsenäisesti suunniteltu ohjelma.
+**Tavoite: toimiva, selkeä ja itsenäisesti suunniteltu ohjelma.**  
+_En tiedä selkeydestä, mutta ainakin toimii ja on tehty itsenäisesti. Apuna käytetty kurssitehtäviä ja materiaalia (+ Stack Overflow)._
 
 ### 4. Työn vaiheet
 
