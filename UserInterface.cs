@@ -18,6 +18,8 @@ namespace matkakustannuslaskuri
 
             string input = ""; // Empty input
 
+            List<MileageCalculator> trips = new List<MileageCalculator>();
+
             while (true)
             {
                 // Asks user to input distance and reads value as double. Also calls to check if input is empty to exit.
@@ -61,10 +63,13 @@ namespace matkakustannuslaskuri
                 // Calculate the rate
                 mileage.Calculator();
 
+                // Add results to list
+                trips.Add(mileage);
+
             }
 
             // Print summary after all the calculations have been done
-            PrintSummary();
+            PrintSummary(trips);
         }
 
         // Method to check if value is empty.
@@ -78,17 +83,18 @@ namespace matkakustannuslaskuri
             return false;
         }
 
-        public void PrintSummary()
+        public void PrintSummary(List<MileageCalculator> trips)
         {
             int tripCount = 1;
 
             Console.WriteLine("Summary:");
 
-            foreach (double totalCost in mileage.totalCosts)
+            foreach (double totalCost in trip.totalCosts)
             {
                 Console.WriteLine(
                     "The total cost of trip " + tripCount + " is " + totalCost + "€."
                 );
+                tripCount++;
             }
         }
     };
