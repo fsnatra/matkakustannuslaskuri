@@ -6,11 +6,8 @@
     {
         static void Main(string[] args)
         {
-            // Console.WriteLine("Hello World!"); // For environment testing.
-
-            MileageCalculator calculator = new MileageCalculator(); // Creates new object in MileageCalculator
-            UserInterface ui = new UserInterface(calculator);
-            ui.Start(); // Calls the UserIn
+            UserInterface ui = new UserInterface(); // Creates new instance
+            ui.Start(); // Calls the UserInterface
         }
     }
 }
