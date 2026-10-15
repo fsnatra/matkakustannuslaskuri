@@ -23,6 +23,15 @@ namespace matkakustannuslaskuri
             this.fuelPrice = fuelPrice;
         }
 
+        public void Calculator()
+        {
+            // First calculate the fuel used
+            FuelUsed();
+
+            // Then the total cost + adds it to the list totalCosts
+            TotalCost();
+        }
+
         public void FuelUsed()
         {
             this.fuelUsed = this.distance / 100 * this.conspuption; // Fuel used based on distance and consuption per 100km.
