@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("matkakustannuslaskuri")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e1eb644ae42d78286670e2dff5fec9bc358e490")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+503610628f712e99c522079d9da12fe421d9880b")]
 [assembly: System.Reflection.AssemblyProductAttribute("matkakustannuslaskuri")]
 [assembly: System.Reflection.AssemblyTitleAttribute("matkakustannuslaskuri")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

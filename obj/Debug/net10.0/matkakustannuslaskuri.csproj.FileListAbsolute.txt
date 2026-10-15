@@ -2,3 +2,13 @@
 /home/sinatra/Documents/matkakustannuslaskuri/obj/Debug/net10.0/matkakustannuslaskuri.AssemblyInfoInputs.cache
 /home/sinatra/Documents/matkakustannuslaskuri/obj/Debug/net10.0/matkakustannuslaskuri.AssemblyInfo.cs
 /home/sinatra/Documents/matkakustannuslaskuri/obj/Debug/net10.0/matkakustannuslaskuri.csproj.CoreCompileInputs.cache
+/home/sinatra/Documents/matkakustannuslaskuri/bin/Debug/net10.0/matkakustannuslaskuri
+/home/sinatra/Documents/matkakustannuslaskuri/bin/Debug/net10.0/matkakustannuslaskuri.deps.json
+/home/sinatra/Documents/matkakustannuslaskuri/bin/Debug/net10.0/matkakustannuslaskuri.runtimeconfig.json
+/home/sinatra/Documents/matkakustannuslaskuri/bin/Debug/net10.0/matkakustannuslaskuri.dll
+/home/sinatra/Documents/matkakustannuslaskuri/bin/Debug/net10.0/matkakustannuslaskuri.pdb
+/home/sinatra/Documents/matkakustannuslaskuri/obj/Debug/net10.0/matkakustannuslaskuri.dll
+/home/sinatra/Documents/matkakustannuslaskuri/obj/Debug/net10.0/refint/matkakustannuslaskuri.dll
+/home/sinatra/Documents/matkakustannuslaskuri/obj/Debug/net10.0/matkakustannuslaskuri.pdb
+/home/sinatra/Documents/matkakustannuslaskuri/obj/Debug/net10.0/matkakustannuslaskuri.genruntimeconfig.cache
+/home/sinatra/Documents/matkakustannuslaskuri/obj/Debug/net10.0/ref/matkakustannuslaskuri.dll
