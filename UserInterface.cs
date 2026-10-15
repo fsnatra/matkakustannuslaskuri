@@ -15,31 +15,48 @@ namespace matkakustannuslaskuri
         {
             Console.WriteLine("Mileage Calculator"); // Prints program name (in english)
             Console.WriteLine(""); // Empty line
+
+            string input = ""; // Empty input
+
             while (true)
             {
                 // Asks user to input distance and reads value as double. Also calls to check if input is empty to exit.
                 Console.WriteLine("Enter distance:");
-                double distance = Convert.ToDouble(Console.ReadLine());
-                if (IsEmpty(distance))
+
+                input = Console.ReadLine();
+                if (IsEmpty(input))
                 {
                     break;
                 }
 
+                double distance = Convert.ToDouble(input);
+
                 // Asks user to input conspuption l/100km as double. Also calls to check if value is empty to return to the beginning.
                 Console.WriteLine("Enter conspuption (l/100km):");
-                double conspuption = Convert.ToDouble(Console.ReadLine());
-                if (IsEmpty(conspuption))
+
+                input = Console.ReadLine();
+                if (IsEmpty(input))
                 {
                     Console.WriteLine("Error, try again.");
                     continue;
                 }
 
+                double consuption = Convert.ToDouble(input);
+
                 // Ask user to input fuel price €/l. Also calls to check if value is empty to return to the beginning.
                 Console.WriteLine("Current fuel price? €/l. (Don't input char €)"); // Should add a parser to remove € before continuing, but to keep this simple I only request the input to not include the char €
-                double fuelPrice = Convert.ToDouble(Console.ReadLine());
+
+                input = Console.ReadLine();
+                if (IsEmpty(input))
+                {
+                    Console.WriteLine("Error, try again.");
+                    continue;
+                }
+
+                double fuelPrice = Convert.ToDouble(input);
 
                 // Add values to object
-                MileageCalculator mileage = new(distance, conspuption, fuelPrice);
+                MileageCalculator mileage = new(distance, consuption, fuelPrice);
 
                 // Calculate the Fuel Used
                 mileage.FuelUsed();
@@ -53,9 +70,9 @@ namespace matkakustannuslaskuri
         }
 
         // Method to check if value is empty.
-        public bool IsEmpty(var value)
+        public bool IsEmpty(string value)
         {
-            if (value == "" || value == null)
+            if (value == "")
             {
                 return true;
             }
@@ -63,13 +80,13 @@ namespace matkakustannuslaskuri
             return false;
         }
 
-        public void PrintSummary(MileageCalculator mileage)
+        public void PrintSummary()
         {
             int tripCount = 1;
 
             Console.WriteLine("Summary:");
 
-            foreach (double totalCost in totalCosts)
+            foreach (double totalCost in mileage.totalCosts)
             {
                 Console.WriteLine(
                     "The total cost of trip " + tripCount + " is " + totalCost + "€."
