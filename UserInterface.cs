@@ -65,7 +65,6 @@ namespace matkakustannuslaskuri
 
                 // Add results to list
                 trips.Add(mileage);
-
             }
 
             // Print summary after all the calculations have been done
@@ -89,13 +88,13 @@ namespace matkakustannuslaskuri
 
             Console.WriteLine("Summary:");
 
-            foreach (double totalCost in trip.totalCosts)
+            foreach (MileageCalculator trip in trips)
             {
                 Console.WriteLine(
-                    "The total cost of trip " + tripCount + " is " + totalCost + "€."
+                    "The total cost of trip " + tripCount + " is " + trip.totalCost + "€."
                 );
-                tripCount++;
             }
+            tripCount++;
         }
-    };
+    }
 }

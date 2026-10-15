@@ -9,6 +9,7 @@ namespace matkakustannuslaskuri
         private double conspuption;
         private double fuelPrice;
         private double fuelUsed;
+        public double totalCost;
 
         public MileageCalculator()
         {
@@ -37,7 +38,7 @@ namespace matkakustannuslaskuri
 
         public void TotalCost()
         {
-            this.totalCosts = this.fuelUsed * this.fuelPrice; // Adds the total cost based on fuel used times the fuel price per litre.
+            this.totalCost = this.fuelUsed * this.fuelPrice; // Adds the total cost based on fuel used times the fuel price per litre.
         }
     }
 }
