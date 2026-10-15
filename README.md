@@ -13,14 +13,14 @@ Ohjelmassa on oltava vähintään:
 
 | Rakennusosa     | Vaatimus                                                            | Toteutus |
 | --------------- | ------------------------------------------------------------------- | :------: |
-| Muuttujat       | Käytä vähintään kahta eri tietotyyppiä (int, double, string, bool). |          |
-| Ehtolause       | Käytä vähintään yksi if / if-else.                                  |          |
-| Silmukka        | Käytä vähintään yksi for tai while.                                 |          |
+| Muuttujat       | Käytä vähintään kahta eri tietotyyppiä (int, double, string, bool). |    ✔     |
+| Ehtolause       | Käytä vähintään yksi if / if-else.                                  |    ✔     |
+| Silmukka        | Käytä vähintään yksi for tai while.                                 |    ✔     |
 | Käyttäjän syöte | Käytä Console.ReadLine() vähintään kerran.                          |    ✔     |
 | Tulosteet       | Käytä Console.WriteLine() ja muotoile tuloste selkeäksi.            |    ✔     |
 | Kommentointi    | Lisää kommentteja, jotka selittävät ohjelman osat ja tarkoituksen.  |    ✔     |
-| Metodi          | Käytä vähintään yhtä omaa metodia (parametrit tai paluuarvo).       |          |
-| Lisäpisteet     | Käytät listaa (List<T>) tietojen tallentamiseen tai käsittelyyn.    |          |
+| Metodi          | Käytä vähintään yhtä omaa metodia (parametrit tai paluuarvo).       |    ✔     |
+| Lisäpisteet     | Käytät listaa (List<T>) tietojen tallentamiseen tai käsittelyyn.    |    ✔     |
 
 ### 3. Projectin laajuus
 
