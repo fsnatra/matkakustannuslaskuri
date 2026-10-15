@@ -1,8 +1,5 @@
 namespace matkakustannuslaskuri
 {
-    using System;
-    using System.Xml.Serialization;
-
     public class MileageCalculator
     {
         private double distance;
@@ -10,10 +7,6 @@ namespace matkakustannuslaskuri
         private double fuelPrice;
         private double fuelUsed;
         public double totalCost;
-
-        public MileageCalculator()
-        {
-        }
 
         public MileageCalculator(double distance, double conspuption, double fuelPrice) // Takes distance, consuption and fuel price as inputs to object
         {
