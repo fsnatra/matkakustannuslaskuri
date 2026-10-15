@@ -36,8 +36,15 @@ namespace matkakustannuslaskuri
                 continue;
             }
 
+            // Ask user to input fuel price €/l. Also calls to check if value is empty to return to the beginning.
+            Console.WriteLine("Current fuel price? €/l. (Don't input char €)"); // Should add a parser to remove € before continuing, but to keep this simple I only request the input to not include the char €
+            double fuelPrice = Convert.ToDouble(Console.ReadLine());
+
             // Add values to object
-            MileageCalculator mileage = new(distance, conspuption);
+            MileageCalculator mileage = new(distance, conspuption, fuelPrice);
+
+            // Calculate the Fuel Used
+            mileage.FuelUsed();
         }
     }
 
