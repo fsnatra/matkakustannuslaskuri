@@ -46,6 +46,8 @@ namespace matkakustannuslaskuri
             // Calculate the Fuel Used
             mileage.FuelUsed();
         }
+
+
     }
 
 
@@ -59,4 +61,6 @@ namespace matkakustannuslaskuri
 
         return false;
     }
+
+    public
 }
