@@ -4,6 +4,12 @@ namespace matkakustannuslaskuri
 
     public class UserInterface
     {
+        private MileageCalculator mileage;
+
+        public UserInterface(MileageCalculator mileage) // Links UI to MileageCalculator class.
+        {
+            this.mileage = mileage;
+        }
     };
 
     public void Start()
