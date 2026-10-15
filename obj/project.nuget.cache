@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ktDkv+9G/Qk=",
+  "success": true,
+  "projectFilePath": "/home/sinatra/Documents/matkakustannuslaskuri/matkakustannuslaskuri.csproj",
+  "expectedPackageFiles": [
+    "/home/sinatra/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.12/microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
