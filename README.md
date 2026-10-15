@@ -16,8 +16,8 @@ Ohjelmassa on oltava vähintään:
 | Muuttujat       | Käytä vähintään kahta eri tietotyyppiä (int, double, string, bool). |          |
 | Ehtolause       | Käytä vähintään yksi if / if-else.                                  |          |
 | Silmukka        | Käytä vähintään yksi for tai while.                                 |          |
-| Käyttäjän syöte | Käytä Console.ReadLine() vähintään kerran.                          |          |
-| Tulosteet       | Käytä Console.WriteLine() ja muotoile tuloste selkeäksi.            |          |
+| Käyttäjän syöte | Käytä Console.ReadLine() vähintään kerran.                          |    ✔     |
+| Tulosteet       | Käytä Console.WriteLine() ja muotoile tuloste selkeäksi.            |    ✔     |
 | Kommentointi    | Lisää kommentteja, jotka selittävät ohjelman osat ja tarkoituksen.  |    ✔     |
 | Metodi          | Käytä vähintään yhtä omaa metodia (parametrit tai paluuarvo).       |          |
 | Lisäpisteet     | Käytät listaa (List<T>) tietojen tallentamiseen tai käsittelyyn.    |          |
@@ -45,8 +45,9 @@ Palauta ohjelma ja esittele se (5–10 min).
 ### 5. Teema
 
 #### Matkakustannuslaskuri
-* Käyttäjä syöttää matkan pituuden ja kulutusarvon (esim. l/100 km tai €/km).
-* Ohjelma laskee matkan kokonaiskustannukset.
-* Ehto voi tarkistaa, onko syöte järkevä (esim. negatiivinen matka hylätään).
-* Silmukka mahdollistaa usean matkan laskemisen.
-* Lisäpisteet: tallennetaan tulokset listaan ja näytetään lopuksi yhteenveto.
+
+- Käyttäjä syöttää matkan pituuden ja kulutusarvon (esim. l/100 km tai €/km).
+- Ohjelma laskee matkan kokonaiskustannukset.
+- Ehto voi tarkistaa, onko syöte järkevä (esim. negatiivinen matka hylätään).
+- Silmukka mahdollistaa usean matkan laskemisen.
+- Lisäpisteet: tallennetaan tulokset listaan ja näytetään lopuksi yhteenveto.
