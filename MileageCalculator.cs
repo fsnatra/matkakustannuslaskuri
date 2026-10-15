@@ -9,9 +9,14 @@ namespace matkakustannuslaskuri
         private double conspuption;
         private double fuelPrice;
         private double fuelUsed;
-        private List<double> totalCosts;
+        public List<double> totalCosts;
 
-        public MileageCalculator(double distance, double conspuption, double fuelPrice) // Takes distance an consuption as input to object
+        public MileageCalculator()
+        {
+            this.totalCosts = new List<double>();
+        }
+
+        public MileageCalculator(double distance, double conspuption, double fuelPrice) // Takes distance, consuption and fuel price as inputs to object
         {
             this.distance = distance;
             this.conspuption = conspuption;
