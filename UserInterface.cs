@@ -4,13 +4,6 @@ namespace matkakustannuslaskuri
 
     public class UserInterface
     {
-        private MileageCalculator mileage;
-
-        public UserInterface(MileageCalculator mileage) // Links UI to MileageCalculator class. ? Maybe not really sure what this does yet lol
-        {
-            this.mileage = mileage;
-        }
-
         public void Start()
         {
             Console.WriteLine("Mileage Calculator"); // Prints program name (in english)
@@ -32,10 +25,12 @@ namespace matkakustannuslaskuri
                 }
 
                 double distance = Convert.ToDouble(input);
+                Console.WriteLine(""); // Line break
 
                 // Asks user to input conspuption l/100km as double. Also calls to check if value is empty to return to the beginning.
                 Console.WriteLine("Enter conspuption (l/100km):");
 
+                // Reads user input and checks if input empty
                 input = Console.ReadLine();
                 if (IsEmpty(input))
                 {
@@ -43,11 +38,14 @@ namespace matkakustannuslaskuri
                     continue;
                 }
 
+                // Converts user input to double
                 double consuption = Convert.ToDouble(input);
+                Console.WriteLine(""); // Line break
 
                 // Ask user to input fuel price €/l. Also calls to check if value is empty to return to the beginning.
-                Console.WriteLine("Current fuel price? €/l. (Don't input char €)"); // Should add a parser to remove € before continuing, but to keep this simple I only request the input to not include the char €
+                Console.WriteLine("Current fuel price? (€/l):");
 
+                // Reads user input and checks if input empty
                 input = Console.ReadLine();
                 if (IsEmpty(input))
                 {
@@ -55,7 +53,9 @@ namespace matkakustannuslaskuri
                     continue;
                 }
 
+                // Converts user input to double
                 double fuelPrice = Convert.ToDouble(input);
+                Console.WriteLine(""); // Line break
 
                 // Add values to object
                 MileageCalculator mileage = new(distance, consuption, fuelPrice);
@@ -82,19 +82,20 @@ namespace matkakustannuslaskuri
             return false;
         }
 
+        // Method to print all calculations
         public void PrintSummary(List<MileageCalculator> trips)
         {
-            int tripCount = 1;
+            int tripCount = 1; // Starts from one
 
             Console.WriteLine("Summary:");
 
-            foreach (MileageCalculator trip in trips)
+            foreach (MileageCalculator trip in trips) // For each value in list, do ...
             {
                 Console.WriteLine(
-                    "The total cost of trip " + tripCount + " is " + trip.totalCost + "€."
+                    "The total cost of trip " + tripCount + " is " + trip.totalCost + "€." // Print trip number and total cost.
                 );
+                tripCount++; // Makes the next trip 2, then 3 etc.
             }
-            tripCount++;
         }
     }
 }
