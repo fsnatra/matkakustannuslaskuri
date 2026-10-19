@@ -7,7 +7,6 @@ namespace matkakustannuslaskuri
         public void Start()
         {
             Console.WriteLine("Mileage Calculator"); // Prints program name (in english)
-            Console.WriteLine(""); // Empty line
 
             string input = ""; // Empty input
 
@@ -16,6 +15,7 @@ namespace matkakustannuslaskuri
             while (true)
             {
                 // Asks user to input distance and reads value as double. Also calls to check if input is empty to exit.
+                Console.WriteLine("---------------"); // Makes it easier to distinguish new object
                 Console.WriteLine("Enter distance:");
 
                 input = Console.ReadLine();
@@ -55,7 +55,6 @@ namespace matkakustannuslaskuri
 
                 // Converts user input to double
                 double fuelPrice = Convert.ToDouble(input);
-                Console.WriteLine(""); // Line break
 
                 // Add values to object
                 MileageCalculator mileage = new(distance, consuption, fuelPrice);
@@ -86,6 +85,12 @@ namespace matkakustannuslaskuri
         public void PrintSummary(List<MileageCalculator> trips)
         {
             int tripCount = 1; // Starts from one
+
+            if(trips.Count == 0)
+            {
+                Console.WriteLine("No trips added.");
+                return;
+            }
 
             Console.WriteLine("Summary:");
 
