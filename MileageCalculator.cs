@@ -3,15 +3,15 @@ namespace matkakustannuslaskuri
     public class MileageCalculator
     {
         private double distance;
-        private double conspuption;
+        private double consumption;
         private double fuelPrice;
         private double fuelUsed;
         public double totalCost;
 
-        public MileageCalculator(double distance, double conspuption, double fuelPrice) // Takes distance, consuption and fuel price as inputs to object
+        public MileageCalculator(double distance, double consumption, double fuelPrice) // Takes distance, consumption and fuel price as inputs to object
         {
             this.distance = distance;
-            this.conspuption = conspuption;
+            this.consumption = consumption;
             this.fuelPrice = fuelPrice;
         }
 
@@ -26,7 +26,7 @@ namespace matkakustannuslaskuri
 
         public void FuelUsed()
         {
-            this.fuelUsed = this.distance / 100 * this.conspuption; // Fuel used based on distance and consuption per 100km.
+            this.fuelUsed = this.distance / 100 * this.consumption; // Fuel used based on distance and consumption per 100km.
         }
 
         public void TotalCost()

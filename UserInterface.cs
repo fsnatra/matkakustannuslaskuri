@@ -27,8 +27,8 @@ namespace matkakustannuslaskuri
                 double distance = Convert.ToDouble(input);
                 Console.WriteLine(""); // Line break
 
-                // Asks user to input conspuption l/100km as double. Also calls to check if value is empty to return to the beginning.
-                Console.WriteLine("Enter conspuption (l/100km):");
+                // Asks user to input consumption l/100km as double. Also calls to check if value is empty to return to the beginning.
+                Console.WriteLine("Enter consumption (l/100km):");
 
                 // Reads user input and checks if input empty
                 input = Console.ReadLine();
@@ -39,7 +39,7 @@ namespace matkakustannuslaskuri
                 }
 
                 // Converts user input to double
-                double consuption = Convert.ToDouble(input);
+                double consumption = Convert.ToDouble(input);
                 Console.WriteLine(""); // Line break
 
                 // Ask user to input fuel price €/l. Also calls to check if value is empty to return to the beginning.
@@ -57,7 +57,7 @@ namespace matkakustannuslaskuri
                 double fuelPrice = Convert.ToDouble(input);
 
                 // Add values to object
-                MileageCalculator mileage = new(distance, consuption, fuelPrice);
+                MileageCalculator mileage = new(distance, consumption, fuelPrice);
 
                 // Calculate the rate
                 mileage.Calculator();
