@@ -8,9 +8,9 @@ namespace matkakustannuslaskuri
         {
             Console.WriteLine("Mileage Calculator"); // Prints program name (in english)
 
-            string input = ""; // Empty input
-
             List<MileageCalculator> trips = new List<MileageCalculator>();
+
+            string? input = "";
 
             while (true)
             {
@@ -19,7 +19,7 @@ namespace matkakustannuslaskuri
                 Console.WriteLine("Enter distance:");
 
                 input = Console.ReadLine();
-                if (IsEmpty(input) || Convert.ToDouble(input) < 0)
+                if (!Double.TryParse(input, out double number) || Convert.ToDouble(input) < 0) // https://stackoverflow.com/questions/30654625/c-sharp-how-to-handle-empty-user-input Fixed warnings CS8600 & CS8604 using TryParse
                 {
                     break;
                 }
@@ -32,7 +32,7 @@ namespace matkakustannuslaskuri
 
                 // Reads user input and checks if input empty
                 input = Console.ReadLine();
-                if (IsEmpty(input) || Convert.ToDouble(input) < 0)
+                if (!Double.TryParse(input, out number) || Convert.ToDouble(input) < 0)
                 {
                     Console.WriteLine("Error, try again.");
                     continue;
@@ -47,7 +47,7 @@ namespace matkakustannuslaskuri
 
                 // Reads user input and checks if input empty
                 input = Console.ReadLine();
-                if (IsEmpty(input) || Convert.ToDouble(input) < 0)
+                if (!Double.TryParse(input, out number) || Convert.ToDouble(input) < 0)
                 {
                     Console.WriteLine("Error, try again.");
                     continue;
@@ -71,15 +71,15 @@ namespace matkakustannuslaskuri
         }
 
         // Method to check if value is empty.
-        public bool IsEmpty(string value)
+        /* public bool IsEmpty(string input)
         {
-            if (value == "")
+            if (input == "")
             {
                 return true;
             }
 
             return false;
-        }
+        } */
 
         // Method to print all calculations
         public void PrintSummary(List<MileageCalculator> trips)
