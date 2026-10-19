@@ -25,7 +25,7 @@ Ohjelmassa on oltava vähintään:
 ### 3. Projectin laajuus
 
 **Koodin pituus: noin 30–100 riviä.**  
-_hups... tuli 108 riviä (tarkistettu Tokei:lla)_
+_hups... tuli 109 riviä (tarkistettu Tokei:lla)_
 
 **Työaika: 5–8 tuntia.**  
 _Kyllä._
