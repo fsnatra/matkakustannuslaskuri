@@ -19,7 +19,7 @@ namespace matkakustannuslaskuri
                 Console.WriteLine("Enter distance:");
 
                 input = Console.ReadLine();
-                if (IsEmpty(input) || Convert.ToInt32(input) < 0)
+                if (IsEmpty(input) || Convert.ToDouble(input) < 0)
                 {
                     break;
                 }
@@ -32,7 +32,7 @@ namespace matkakustannuslaskuri
 
                 // Reads user input and checks if input empty
                 input = Console.ReadLine();
-                if (IsEmpty(input) || Convert.ToInt32(input) < 0)
+                if (IsEmpty(input) || Convert.ToDouble(input) < 0)
                 {
                     Console.WriteLine("Error, try again.");
                     continue;
@@ -47,7 +47,7 @@ namespace matkakustannuslaskuri
 
                 // Reads user input and checks if input empty
                 input = Console.ReadLine();
-                if (IsEmpty(input) || Convert.ToInt32(input) < 0)
+                if (IsEmpty(input) || Convert.ToDouble(input) < 0)
                 {
                     Console.WriteLine("Error, try again.");
                     continue;
