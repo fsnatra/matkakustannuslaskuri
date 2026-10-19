@@ -32,6 +32,7 @@ namespace matkakustannuslaskuri
         public void TotalCost()
         {
             this.totalCost = this.fuelUsed * this.fuelPrice; // Adds the total cost based on fuel used times the fuel price per litre.
+            this.totalCost = Math.Round(this.totalCost, 2); // Rounds the total cost to two decimals.
         }
     }
 }
