@@ -84,13 +84,13 @@ namespace matkakustannuslaskuri
         // Method to print all calculations
         public void PrintSummary(List<MileageCalculator> trips)
         {
-            int tripCount = 1; // Starts from one
-
-            if(trips.Count == 0)
+            if (trips.Count == 0)
             {
                 Console.WriteLine("No trips added.");
                 return;
             }
+
+            int tripCount = 1; // Starts from one
 
             Console.WriteLine("Summary:");
 
