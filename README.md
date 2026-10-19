@@ -25,10 +25,10 @@ Ohjelmassa on oltava vähintään:
 ### 3. Projectin laajuus
 
 **Koodin pituus: noin 30–100 riviä.**  
-_hups... tuli 109 riviä (tarkistettu Tokei:lla)_
+_Joo.. meni hieman yli. Ohjelma sisältää 112 riviä koodia (tarkistettu Tokei:lla)_
 
 **Työaika: 5–8 tuntia.**  
-_Kyllä._
+_Kyllä. Ehkä tuli enemmmän._
 
 **Tavoite: toimiva, selkeä ja itsenäisesti suunniteltu ohjelma.**  
 _En tiedä selkeydestä, mutta ainakin toimii ja on tehty itsenäisesti. Apuna käytetty kurssitehtäviä ja materiaalia (+ Stack Overflow)._
@@ -43,7 +43,8 @@ Toteuta ja testaa ohjelma. Huom! Omia testejä ei tarvitse kirjoittaa vaan testa
 
 Kommentoi ja varmista toimivuus.
 
-Palauta ohjelma ja esittele se (5–10 min).
+Palauta ohjelma ja esittele se (5–10 min).  
+[_Esityksestä tuli noin 25min._](https://youtu.be/sf71Nq5Bwog)
 
 ### 5. Teema
 
