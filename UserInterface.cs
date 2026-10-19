@@ -6,7 +6,7 @@ namespace matkakustannuslaskuri
     {
         public void Start()
         {
-            Console.WriteLine("Mileage Calculator"); // Prints program name (in english)
+            Console.WriteLine("Mileage Calculator (enter to exit)"); // Prints program name (in english)
 
             List<MileageCalculator> trips = new List<MileageCalculator>();
 
@@ -16,11 +16,16 @@ namespace matkakustannuslaskuri
             {
                 // Asks user to input distance and reads value as double. Also calls to check if input is empty to exit.
                 Console.WriteLine("---------------"); // Makes it easier to distinguish new object
-                Console.WriteLine("Enter distance:");
+                Console.Write("Enter distance (km): ");
 
                 input = Console.ReadLine();
                 if (!Double.TryParse(input, out double number) || Convert.ToDouble(input) < 0) // https://stackoverflow.com/questions/30654625/c-sharp-how-to-handle-empty-user-input Fixed warnings CS8600 & CS8604 using TryParse
                 {
+                    if(input != "")
+                    {
+                        Console.WriteLine("Error, try again");
+                        continue;
+                    }
                     break;
                 }
 
@@ -28,7 +33,7 @@ namespace matkakustannuslaskuri
                 Console.WriteLine(""); // Line break
 
                 // Asks user to input consumption l/100km as double. Also calls to check if value is empty to return to the beginning.
-                Console.WriteLine("Enter consumption (l/100km):");
+                Console.Write("Enter consumption (l/100km): ");
 
                 // Reads user input and checks if input empty
                 input = Console.ReadLine();
@@ -43,7 +48,7 @@ namespace matkakustannuslaskuri
                 Console.WriteLine(""); // Line break
 
                 // Ask user to input fuel price €/l. Also calls to check if value is empty to return to the beginning.
-                Console.WriteLine("Current fuel price? (€/l):");
+                Console.Write("Current fuel price? (€/l): ");
 
                 // Reads user input and checks if input empty
                 input = Console.ReadLine();
@@ -64,6 +69,10 @@ namespace matkakustannuslaskuri
 
                 // Add results to list
                 trips.Add(mileage);
+
+                Console.WriteLine(""); // Line break
+                Console.WriteLine("Trip saved.");
+
             }
 
             // Print summary after all the calculations have been done
